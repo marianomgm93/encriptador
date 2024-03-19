@@ -1,0 +1,165 @@
+/* anterior fue para eliminar márgenes y paddings que vienen por defecto. El asterisco representa todo el documento*/
+body{
+    padding: 0;
+    margin:0;
+}
+header {
+  width: 100%;
+  background-color: #C1AE9F;
+}
+
+header img {
+  margin-left: 95px;
+  padding: 5px;
+}
+
+main {
+  width: 100%;
+  background-color: #C1AE9F;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-bottom: 1vh;
+}
+
+section {
+  height: 100%;
+  background-color: aliceblue;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.section1 {
+  width: 60%;
+  height: auto;
+  margin-left: 20px;
+}
+
+.section2 {
+  width: 30%;
+  height: auto;
+  margin-right: 20px;
+}
+
+
+
+#ButtonCopiar {
+  display: none;
+}
+
+.contenedor_imagen {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 1vh;
+}
+
+.contenedor_subtitle {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.contenedor_p {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#textoDesencriptado {
+  background-color: aliceblue;
+  border: none;
+  resize: none;
+  text-align: center;
+}
+
+#textoEncriptado {
+  width: 80%;
+  height: auto;
+  resize: none;
+  display: block;
+  background-color: aliceblue;
+  border: none;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 2.5em;
+  border-radius: 10px;
+  outline: 0;
+}
+
+.contenedor_botones {
+  text-align: center;
+  margin-top: 10px;
+}
+.botones {
+  width: 30%;
+  height: 40px;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  background-color: azure;
+  color: black;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.botones:hover {
+  background-color: #d6cccb;
+  color: #000000;
+}
+
+footer {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(24, 24, 107);
+  background-color: #C1AE9F;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 900px) {
+  /* Adjust styles for smaller screens here */
+  body{
+    padding: 0;
+}
+  header img {
+    margin-left: 0; /* Adjust as needed */
+
+  }
+
+  main {
+    display: flex; /* Change display property as needed */
+    flex-direction: column; /* Adjust flex-direction if necessary */
+    align-items: center; /* Center items */
+    width: 100%;
+  }
+
+  .section1,
+  .section2 {
+    width: 100%; /* Adjust width as needed */
+    margin: 1vw; /* Adjust margin as needed */
+
+    
+  }
+  .contenedor_p,
+  .contenedor_imagen,
+  .contenedor_subtitle {
+    
+    width: 100%;
+    height: auto; /* Ensure height adjusts for content */
+    padding: 10px; /* Add padding for better spacing */
+    margin: 1vw;
+  }
+
+  #textoEncriptado {
+    width: 90%; /* Adjust width as needed */
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+
+  .botones {
+    width: 80%; /* Adjust width as needed */
+  }
+}
